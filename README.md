@@ -158,6 +158,10 @@ server intiate shutdown : server remove its connection with client so it can be 
 
 
 
+# THE HOW 
+
+## how to use server  with claude 
+**connectors**: these are the connector that is present in claude directly used like u can click dot button and connec to ur github etc but main problem we cannot make connector for every mcp
 
 
  
