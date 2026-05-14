@@ -125,8 +125,39 @@ so this is the way trough which cleint and server exchange their feature with ea
 listchanged : so take a case where a new tool is added to server in between so now server will tell client okay so now i have this capablity too 
 
 ## tool discovering 
-So understand this thing every 
+So understand this thing when connection is setupt client ask server tool/list so server gave back list of all tool
+so now hub decide which tool it want to use and like if we take local server so in it server is the ur desktop file system and client ask for permission to read .. etc
+
+## shutdown phase 
+one side intiate shutdown 
+no special json rpc shutdown msg is defined 
+transport layer is responsible for signaling termination 
+
+shutdown in stdio : cleint intiated shutdown : in this cleint close input stream and wait fro server to exit if it doesnt it send sigterm poilitly tell server to exit is still not sigkill force server to exit 
+
+➡️ shutdown in http : cleint intiate shut down : in this client tell to stop sending msg and it stop 
+server intiate shutdown : server remove its connection with client so it can be becuse server is down so cleint try to reconnect or etc 
+
+⭐ **Ping** : it is used to check if the other side is still active it also sended b/w long running task if server and cleint didnt intract for long time in b/w 
+
+⭐ **Error handling**: so there can be case where some error occur common error are:
+1. mismatch version
+2. calling tools method tht didnt exist
+3. internal server failure
+4. timeout exceeded  client cancel request
+5. malfored hson rpc msg
+
+⭐**Timeout**: There can be a chance like in which some process or resource is running and capturing memory so we cant let this happen for long time so that time timeout cancel or free that resource 
+
+⭐**Progress notifaction**: it give notification abt the progress like if 400 files is scnning so it will give u progress update 
+
+
+
+
+
+
+
+
 
 
  
-   
