@@ -82,3 +82,51 @@ rpc is a langauge or tool that allow us to run fucntion file present on differen
 **Respone**
 1. its have id jsonrpc but
 2. result in result it have given list of all tool as u called the tool/list so its like this 
+
+
+## why json rpc not rest api 
+1. so understand as rpc is lightweight as not imp to use http
+2. bi directional -> server can also send info to client
+3. its transport agnostic means u u can use any transprt layer protocol http or anything else
+
+## Mcp types of server 
+local and remote server
+1. local : so in this type of server stdio is used what is it so stdin means input the program reads
+how it work host launches server as suborocess on machine
+host client write json rpc message int server as stdin
+server read those message and give stdout
+used for local work like related to ur machine super fast and all, nitish campusx had given a good example to understand this better if u want u can check it out his mcp arch 3rd video
+
+2. remote : (http+sse)-: host send a post req with json rpc as payload, this also use all authentication used in http
+sse: its an extention of http, used to stream msg so instead of sending big chunk in one go it send it in small chuncks
+
+
+## the lifecycle of mcp
+now we will try to understand how client and server connect to each other 
+this is three way req res based  -: checkout video no. 4 for seeing the file and code used to develop connetion 
+1. client send a req with some info to server
+2. server send res
+3. cleint again send a confimation
+
+between all his server cleint cant send anything to each other 
+
+**version negotiation**
+its means like if server and client have different prtocol ver. so it will check its config if cleint have that server server with it if yes they can connect f no they wont connect 
+
+**capability negotiation**
+so this is the way trough which cleint and server exchange their feature with each other 
+1. understand what feature client offer to server : cleint give root acess if want to fetch some files or read anything
+2. sampling : server can also send to use some tool like ai server want to use cleint ai for some task eg. summarization
+3. there can be case where eg. server want to acess github but it didnt have the key to acess so alert cleint to give it
+
+1. Now what server offer to cleint : prompts u can give tools , resources and logging is also can be shared
+
+**Subcapblity**
+listchanged : so take a case where a new tool is added to server in between so now server will tell client okay so now i have this capablity too 
+
+## tool discovering 
+So understand this thing every 
+
+
+ 
+   
