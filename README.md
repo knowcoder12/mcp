@@ -171,4 +171,6 @@ server intiate shutdown : server remove its connection with client so it can be 
  mcp old ver is traditional way and hard way 
  fastmcp is written in mcp old but its more easy then it 
 
- sun local server claude se kaise connect ye video se dekh le badiya main likh ni raha jab use aay tab use karna 
+ ## Imp sun local server claude se kaise connect ye video se dekh le badiya main likh ni raha jab use aay tab use karna  
+Aur ek aur cheez ki fastapi ki app ko directly fastmcp mein convert kar sakte hai 
+
