@@ -174,3 +174,6 @@ server intiate shutdown : server remove its connection with client so it can be 
  ## Imp sun local server claude se kaise connect ye video se dekh le badiya main likh ni raha jab use aay tab use karna  
 Aur ek aur cheez ki fastapi ki app ko directly fastmcp mein convert kar sakte hai 
 
+## remote mcp server
+
+this server is deployed on some heavy server that is running continously
