@@ -164,4 +164,11 @@ server intiate shutdown : server remove its connection with client so it can be 
 **connectors**: these are the connector that is present in claude directly used like u can click dot button and connec to ur github etc but main problem we cannot make connector for every mcp
 
 
- 
+
+ fastmcp vc mcp:
+ pip install mcp[cli] and fastmcp both are same only diff is that before they both are together but after some time they seprated and made their own version 
+
+ mcp old ver is traditional way and hard way 
+ fastmcp is written in mcp old but its more easy then it 
+
+ sun local server claude se kaise connect ye video se dekh le badiya main likh ni raha jab use aay tab use karna 
