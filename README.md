@@ -177,3 +177,12 @@ Aur ek aur cheez ki fastapi ki app ko directly fastmcp mein convert kar sakte ha
 ## remote mcp server
 
 this server is deployed on some heavy server that is running continously
+
+
+
+pip uv install
+folder bana 
+uspe uv init .
+uv add fastmcp
+uv run fastmcp dev inspector main.py:mcp -: ye wala sahi purane wala galat hai 
+uv run fastmcp dev inspector main.py:mcp 
